@@ -1,0 +1,54 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>VIG d.d. Administracija</title>
+<link rel="stylesheet" type="text/css" href="../css/style.css" />
+<script type="text/javascript" src="../js/jQuery/jquery-1.5.2.min.js"></script>
+<script type="text/javascript" src="../js/jQuery/jquery.form.js"></script>
+<script type="text/javascript" src="../js/jQuery/jquery.cookie.js"></script>
+<script type="text/javascript" src="../js/functions/admin.js"></script>
+<script type="text/javascript" src="../js/handlers/auto_check.js"></script>
+
+</head>
+<body>
+    <div id="screen">
+    </div>
+    <div id="undermenu">
+    </div>
+    <div id="headcont">
+        <div id="header">
+            <div id="languagebar">
+                <button onclick="openlinkmain()">Glavna</button>
+            </div>
+            <div id="title">
+                Administracija
+            </div>
+            <div id="menu"></div>
+        </div>
+        </div>
+    <div id="container" onmouseover="dropdown_destroy()">
+        
+        <div id="main">
+            <div id="box4">
+                <div id="inputhold">
+                Korisničko ime:
+                <input id="username"></input>
+                </div>
+                <br>
+                <div id="inputhold">
+                Lozinka:
+                <input id="password" type=password></input>
+                </div>
+                <br>
+                <button id="login_butt" onclick="login_ajax()">Potvrdi</button>
+                <div id="resp1"></div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+            <p>VIG d.d. &copy 2011</p>
+    </div>
+</body>
+</html>
